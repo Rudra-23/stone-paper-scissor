@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(39, 41, 68);
+}
+.container{
+    background-color: rgb(39, 41, 68);
+    color:rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+}
+.match h1{
+    padding-bottom: 5px;
+}
+.score{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+   
+}
+.score .computerscore p,.score .playerscore p{
+    font-size: large;
+    text-align: center;
+    padding-top: 5px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+
+    
+}
+.match{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 400px;
+    display: none;
+   
+}
+.options{
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+   
+}
+.play,.rock,.paper,.scissor{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: springgreen;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.playerimg{
+ transform: rotateY(180deg);
+}
+.play:hover,.rock:hover,.paper:hover,.scissor:hover{
+    background-color: salmon;
+}
+@media screen and (max-width:700px){
+    .playerimg{
+        width: 150px;
+        height: 150px;
+    }
+    .computerimg{
+        height: 150px;
+        width: 150px;
+    }
+    .options{
+        height: 150px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
